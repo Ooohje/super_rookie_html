@@ -42,8 +42,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg1 .card.dark .chip{background:#fff;color:#000;border-color:#fff}
 #pg1 .ttl{font-size:18px;font-weight:700;line-height:1.42}
 #pg1 ul.bl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
-#pg1 ul.bl li{display:flex;gap:8px;font-size:14px;line-height:1.52}
-#pg1 ul.bl li::before{content:"—";font-weight:700;flex:none}
+#pg1 ul.bl li{position:relative;padding-left:17px;font-size:14px;line-height:1.52}
+#pg1 ul.bl li::before{content:"—";font-weight:700;position:absolute;left:0;top:0}
 #pg1 .card.dark ul.bl li{color:#D8D8D8}
 #pg1 .flow{display:flex;gap:10px;align-items:stretch}
 #pg1 .step{flex:1;min-width:0;border:1px solid #000;border-radius:9px;padding:12px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center}
@@ -87,8 +87,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg2 .bd{font-size:13px;line-height:1.55}
 #pg2 .card.dark .bd{color:#D8D8D8}
 #pg2 ul.bl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
-#pg2 ul.bl li{display:flex;gap:8px;font-size:14px;line-height:1.52}
-#pg2 ul.bl li::before{content:"—";font-weight:700;flex:none}
+#pg2 ul.bl li{position:relative;padding-left:17px;font-size:14px;line-height:1.52}
+#pg2 ul.bl li::before{content:"—";font-weight:700;position:absolute;left:0;top:0}
 #pg2 .card.dark ul.bl li{color:#D8D8D8}
 #pg2 .flow{display:flex;gap:8px;align-items:stretch}
 #pg2 .step{flex:1;min-width:0;border:1px solid #000;border-radius:9px;padding:9px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
@@ -131,8 +131,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg3 .bd{font-size:13px;line-height:1.55}
 #pg3 .card.dark .bd{color:#D8D8D8}
 #pg3 ul.bl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
-#pg3 ul.bl li{display:flex;gap:8px;font-size:13px;line-height:1.52}
-#pg3 ul.bl li::before{content:"—";font-weight:700;flex:none}
+#pg3 ul.bl li{position:relative;padding-left:17px;font-size:13px;line-height:1.52}
+#pg3 ul.bl li::before{content:"—";font-weight:700;position:absolute;left:0;top:0}
 #pg3 .card.dark ul.bl li{color:#D8D8D8}
 #pg3 .flow{display:flex;gap:10px;align-items:stretch}
 #pg3 .step{flex:1;min-width:0;border:1px solid #000;border-radius:9px;padding:12px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center}
@@ -172,8 +172,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg4 .bd{font-size:13px;line-height:1.55}
 #pg4 .card.dark .bd{color:#D8D8D8}
 #pg4 ul.bl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
-#pg4 ul.bl li{display:flex;gap:8px;font-size:14px;line-height:1.52}
-#pg4 ul.bl li::before{content:"—";font-weight:700;flex:none}
+#pg4 ul.bl li{position:relative;padding-left:17px;font-size:14px;line-height:1.52}
+#pg4 ul.bl li::before{content:"—";font-weight:700;position:absolute;left:0;top:0}
 #pg4 .card.dark ul.bl li{color:#D8D8D8}
 #pg4 .illus{border:1px solid #DCDCDC;border-radius:10px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#fff;min-height:200px;justify-content:center}
 #pg4 .cap{font-size:11px;font-weight:700;color:#6B6B6B;text-align:center}
@@ -218,6 +218,9 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg5 .dc+.dc{margin-left:-1px}
 #pg5 .dc.hd{background:#000;color:#fff;font-weight:700}
 #pg5 .dc.fc{font-weight:700}
+#pg5 .card.dark .dtbl{background:#fff}
+#pg5 .card.dark .dc{color:#111}
+#pg5 .card.dark .dc.hd, #pg5 .card.dark .dc.hl{color:#fff}
 #pg5 .strong{font-size:15px;font-weight:700}
 #pg5 .footer{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#6B6B6B}
 #pg5 .footer b{color:#000;font-weight:700}
@@ -244,8 +247,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg6 .bd+.bd{margin-top:2px}
 #pg6 .card.dark .bd{color:#D8D8D8}
 #pg6 ul.bl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
-#pg6 ul.bl li{display:flex;gap:8px;font-size:14px;line-height:1.52}
-#pg6 ul.bl li::before{content:"—";font-weight:700;flex:none}
+#pg6 ul.bl li{position:relative;padding-left:17px;font-size:14px;line-height:1.52}
+#pg6 ul.bl li::before{content:"—";font-weight:700;position:absolute;left:0;top:0}
 #pg6 .card.dark ul.bl li{color:#D8D8D8}
 #pg6 .illus{border:1px solid #DCDCDC;border-radius:10px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#fff;margin-top:2px}
 #pg6 .people{display:flex;align-items:flex-end;justify-content:center;gap:26px}
@@ -261,6 +264,9 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg6 .dc+.dc{margin-left:-1px}
 #pg6 .dc.hd{background:#000;color:#fff;font-weight:700}
 #pg6 .dc.fc{font-weight:700}
+#pg6 .card.dark .dtbl{background:#fff}
+#pg6 .card.dark .dc{color:#111}
+#pg6 .card.dark .dc.hd, #pg6 .card.dark .dc.hl{color:#fff}
 #pg6 .dc.hl{background:#000;color:#fff;font-weight:700}
 #pg6 .footer{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#6B6B6B}
 #pg6 .footer b{color:#000;font-weight:700}
@@ -457,8 +463,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <ul class="bl">
           <li>메타코리아 출시 현장: “스마트폰과 달리 겉으로 촬영 여부를 가늠하기 어렵다” 자인 (ZDNet, 2026.04)</li>
           <li>한림대 안정민 교수: “타인의 기기에 의해 내가 데이터 처리의 일부가 되는” 구조 → 상품화 전 영향평가·즉시 익명화 요구 (ZDNet, 2026.06)</li>
-          <li>메타 커넥트 2026(9/23)에서 카메라를 뺀 ‘레이밴 메타 오디오’ 공개 — 43g, 349달러, 10/13 시판 (데일리안, 2026.09.24)</li>
-          <li><b>같은 날 카메라 탑재 ‘레이밴 메타 3세대’도 동시 공개</b> → 카메라를 포기한 게 아니라 라인업을 쪼갠 것. 카메라리스는 문제를 해결한 게 아니라 <b>우회</b>했고, 카메라 모델 사용자와 그 주변인에게는 답이 없음</li>
+          <li>2026.09.23 메타 커넥트 2026에서 카메라를 뺀 ‘레이밴 메타 오디오’ 공개 — 43g, 349달러, 출시일 2026.10.13 (데일리안, 2026.09.24)</li>
+          <li><b>동일 행사에서 카메라 탑재 ‘레이밴 메타 3세대’도 함께 공개</b> → 카메라를 포기한 게 아니라 라인업을 쪼갠 것. 카메라리스는 문제를 해결한 게 아니라 <b>우회</b>했고, 카메라 모델 사용자와 그 주변인에게는 답이 없음</li>
         </ul>
       </div>
       <div class="card">
@@ -500,7 +506,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <ul class="bl">
           <li>UT에서는 카메라 사용이 두드러지지만, 실제 구매 요인은 손을 쓰지 않고 바로 묻는 AI 어시스턴트 경험</li>
           <li>촬영이 낳는 프라이버시 불안이 ‘공공장소에서 글래스를 쓰는 것’ 자체를 위축 → 핵심 가치 사용까지 차단</li>
-          <li>메타도 같은 판단 — 레이밴 메타 오디오는 카메라 없이 음성·AI만으로 349달러에 판매. 카메라 없이도 AI 안경의 상품성이 성립한다고 제조사가 인정한 셈</li>
+          <li>메타도 같은 판단 — 레이밴 메타 오디오는 카메라 없이 음성·AI만으로 349달러에 책정. 카메라 없이도 AI 안경의 상품성이 성립한다고 제조사가 인정한 셈</li>
           <li>촬영 프라이버시 해결 = 카메라 개선이 아니라 착용 장벽 제거. 카메라리스와 달리 visibility는 유지</li>
         </ul>
       </div>
@@ -866,7 +872,7 @@ ByteTrack · OC-SORT</div></div>
       <div class="card">
         <div class="chip">Q1</div>
         <div class="ttl">AI가 영상 속 사람을 안정적으로 감지·마스킹할 수 있나요?</div>
-        <div class="bd">Instance Segmentation은 MS-COCO·Cityscapes 벤치마크에서 고성능이 입증되었고 실시간 추적도 가능합니다. 전신 검출 자체도 최근 연구에서 AP 0.948 / AR 0.976 수준이 보고되었습니다. 삼성 My FanCam은 다수 인물 인식·지속 추적을 이미 상용화했습니다. 폐색·빠른 움직임에서의 오류는 ‘인식 불확실 시 마스킹 유지’ Fail-safe로 대응합니다.</div>
+        <div class="bd">Instance Segmentation은 MS-COCO·Cityscapes 벤치마크에서 고성능이 입증되었고 실시간 추적도 가능합니다. 전신 검출 자체도 후속 연구에서 AP 0.948 / AR 0.976 수준이 보고되었습니다. 삼성 My FanCam은 다수 인물 인식·지속 추적을 이미 상용화했습니다. 폐색·빠른 움직임에서의 오류는 ‘인식 불확실 시 마스킹 유지’ Fail-safe로 대응합니다.</div>
       </div>
       <div class="card">
         <div class="chip">Q2</div>

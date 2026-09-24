@@ -424,7 +424,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 
 <section class="sheet" id="pg2">
 <div class="sheetlabel">P2 제안 배경</div>
-<div class="page" style="height:1900px">
+<div class="page" style="height:1990px">
 <div class="trow">
   <div class="lab">제안 배경</div>
   <div class="cont">
@@ -438,7 +438,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
     <div class="row3">
       <div class="card" style="padding:20px;gap:6px">
         <div class="stat">65~90%</div>
-        <div class="bd">민감한 맥락에서 <b>방어 행동을 취하겠다</b>고 답한 비착용자 비율 (CHI 2026 ‘Mind the Gap’, 설문 N=525)</div>
+        <div class="bd">민감한 맥락에서 <b>방어 행동을 취하겠다</b>고 답한 비착용자 비율 (CHI 2026 ‘Mind the Gap’, 설문 N=525 · 중국 표본)</div>
       </div>
       <div class="card" style="padding:20px;gap:6px">
         <div class="stat">200만 대</div>
@@ -542,6 +542,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
       </div>
     </div>
 
+    <div class="note" style="font-size:12px;color:#6B6B6B;line-height:1.55">인용한 선행 연구의 표본 — ‘See Me If You Can’ 인터뷰 N=18(전원 파키스탄 거주, 논문이 문화적 맥락의 영향을 한계로 명시), ‘Mind the Gap’ 설문 N=525(중국). 방향성 근거로 인용하며 국내 시장에 그대로 일반화하지 않고, 대면 테스트로 검증합니다.</div>
+
     <div class="banner">
       <div style="font-size:12px;font-weight:900;letter-spacing:.1em;opacity:.6">우리의 답</div>
       <div style="font-size:22px;font-weight:700;line-height:1.45">촬영이 끝난 뒤 제3자를 거쳐 묻지 않습니다. 그 사람이 그 자리에 있는 순간에, 손바닥 한 번으로 끝냅니다</div>
@@ -555,7 +557,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 
 <section class="sheet" id="pg3">
 <div class="sheetlabel">P3 제안 내용 ① 핵심 기능</div>
-<div class="page" style="height:2150px">
+<div class="page" style="height:2260px">
 <div class="trow">
   <div class="lab">제안 내용</div>
   <div class="cont">
@@ -574,6 +576,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
           <li>화면 속 사람을 객체(인스턴스) 단위로 감지</li>
           <li>별도 동작 없이 전신 실루엣을 기본 마스킹</li>
           <li>‘모르면 더 가린다’ Fail-safe 원칙</li>
+          <li><b>착용자가 끌 수 없는 상시 활성</b></li>
         </ul>
       </div>
       <div class="card dark">
@@ -590,7 +593,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <div class="ttl">개인별 선택적 언마스킹</div>
         <ul class="bl">
           <li>화면 속 모두가 아니라 ‘그 사람만’ 해제</li>
-          <li>Multi-Object Tracking으로 인물 ID 유지</li>
+          <li>외형 임베딩 없는 추적으로 인물 ID 유지</li>
           <li>제스처 좌표 ↔ 인물 바운딩 박스 매칭</li>
         </ul>
       </div>
@@ -630,7 +633,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
           </div>
         </div>
       </div>
-      <div class="callout">전신 마스킹은 영상 품질 손실이 큽니다(키포인트 인식 최대 −34%p). 그래서 <b>Phase 1은 보호를 우선</b>하고, <b>Phase 2에서 마스킹 영역을 합성 인물로 대체</b>해 행동·제스처·상호작용은 보존하면서 식별성만 제거합니다.</div>
+      <div class="callout">전신 마스킹은 대가가 따릅니다. 익명화된 영상을 <b>학습 데이터로 썼을 때</b> 키포인트 인식 성능이 얼굴 블러 10%p 이상, 전신 블러 최대 34%p 떨어졌습니다(체감 화질이 아닌 컴퓨터 비전 학습 품질 지표). 선행 연구 인터뷰에서도 착용자들은 블러가 “개인적인 느낌과 주변 분위기를 잃게 한다”고 답했습니다. 그래서 <b>Phase 1은 보호를 우선</b>하고, <b>Phase 2에서 마스킹 영역을 합성 인물로 대체</b>해 행동·상호작용은 보존하면서 식별성만 제거합니다.</div>
       <div class="note">출처: MIRAGE — Full-Body Bystander Privacy for Smart Glasses (arXiv 2609.24537) / Does Image Anonymization Impact Computer Vision Training? (arXiv 2306.05135)</div>
     </div>
 
@@ -682,7 +685,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 바운딩 박스 + ID</div></div>
         <div class="arr">→</div>
         <div class="step"><div class="stepn">02</div><div class="stept">Multi-Object Tracking
-DeepSORT · ByteTrack</div></div>
+ByteTrack · OC-SORT</div></div>
         <div class="arr">→</div>
         <div class="step"><div class="stepn">03</div><div class="stept">Gesture Detection
 손 위치 감지</div></div>
@@ -847,7 +850,7 @@ DeepSORT · ByteTrack</div></div>
 
 <section class="sheet" id="pg5">
 <div class="sheetlabel">P5 제안 내용 ③ 기술 QnA·로드맵</div>
-<div class="page" style="height:1980px">
+<div class="page" style="height:2860px">
 <div class="trow">
   <div class="lab">제안 내용</div>
   <div class="cont">
@@ -875,13 +878,21 @@ DeepSORT · ByteTrack</div></div>
         <div class="chip">Q3</div>
         <div class="ttl">제스처 인식이 촬영 허용 의사 표시로 쓸 만큼 정확한가요?</div>
         <div class="bd">CNN 기반 손 제스처 인식은 AR·스마트글래스 환경에서 83~97%로 보고되어 있습니다(97.12% AR 상호작용 시스템, 83.94% OpenGlass 온디바이스, 83.06% FaceSight). 다만 이는 착용자 측 인식을 다룬 서로 다른 세 연구의 값이며, 비착용자가 일정 거리에서 손바닥을 드는 조건을 측정한 것은 아닙니다.</div>
+        <div class="bd">두 종류의 오류는 결과가 전혀 다릅니다. <b>미검출</b>(손을 들었는데 인식 실패)은 마스킹이 유지되므로 안전하고 다시 시도하면 됩니다. <b>오검출</b>(제스처가 없었는데 있다고 판정)은 동의하지 않은 사람의 마스킹이 풀리는 것이므로 그 자체가 침해입니다. 따라서 설계 목표는 정확도가 아니라 <b>오검출 억제</b>입니다. BLINDSPOT도 손 움직임에 엄격한 제약을 걸고 신호가 그 인물에게서 나왔는지 기하학적으로 검증했습니다. 본 제안 역시 일정 시간 이상 유지된 제스처만 유효 신호로 인정하고, 손 위치가 해당 인물의 신체 범위와 공간적으로 일관될 때만 매칭을 승인하며, 애매하면 마스킹을 유지합니다.</div>
         <div class="bd">가장 근접한 BLINDSPOT은 제스처 방식이 기기 없이 약 160ms 지연을 내지만 인식 거리가 <b>약 3m로 제한</b>되고 세 신호 방식 중 유일하게 <b>오탐이 발생</b>한다고(최대 9% 수준) 보고했습니다. 본 제안은 이 3m·9%를 설계 상한으로 삼고 실제 정확도는 대면 테스트로 검증합니다. 오인식이 나더라도 기본값이 ‘보호’이므로 실패 비용이 낮습니다.</div>
       </div>
       <div class="card">
         <div class="chip">Q4</div>
         <div class="ttl">여러 사람 중 ‘누가 손을 들었는지’를 어떻게 구분하나요?</div>
-        <div class="bd">Multi-Object Tracking(DeepSORT, ByteTrack 등 프로덕션 수준 알고리즘)으로 각 인물의 ID를 유지하고, 제스처가 감지된 손의 공간 좌표와 인물 바운딩 박스를 거리·시간적 일관성 기준으로 매칭합니다. ByteTrack은 MOT17에서 80.3 MOTA를 기록했으며 폐색·교차 상황 처리도 개선되어 있습니다.</div>
+        <div class="bd">Multi-Object Tracking으로 각 인물의 ID를 유지하고, 제스처가 감지된 손의 공간 좌표와 인물 바운딩 박스를 거리·시간적 일관성 기준으로 매칭합니다. 추적 알고리즘은 외형 임베딩을 쓰는 DeepSORT 계열이 아니라 움직임 예측과 박스 겹침 기반의 <b>ByteTrack·OC-SORT 계열</b>을 채택합니다. 외형 특징을 벡터로 추출하지 않아야 ‘생체정보를 만들지 않는다’는 원칙과 일치하기 때문입니다. ByteTrack은 MOT17에서 80.3 MOTA를 기록했습니다.</div>
       </div>
+    </div>
+
+    <div class="card dark">
+      <div class="chip">Q6</div>
+      <div class="ttl">착용자가 이 기능을 끌 수 있나요?</div>
+      <div class="bd">끌 수 없도록 설계합니다. 촬영 시 항상 적용되는 <b>상시 활성 기능</b>이며 설정에서 해제하는 경로를 두지 않습니다. 해제가 가능해지는 순간 보호는 다시 착용자의 선의에 의존하게 되고, 비착용자는 상대가 기능을 켜 두었는지 확인할 방법이 없어 LED 고지 방식의 문제로 되돌아갑니다.</div>
+      <div class="bd">선행 연구의 관찰과도 맞닿아 있습니다. 착용자에게 선택권을 준 시나리오에서 한 참가자는 <b>자신이 고를 수 있다면 적용하지 않겠다</b>고 답했고, 비착용자 참가자 <b>전원</b>이 제조사 의무화를 요구했습니다. 다만 착용자의 불편을 무시하지는 않습니다. 착용자가 원하는 것은 ‘끄는 것’이 아니라 ‘결과물이 쓸 만한 것’이므로, Phase 2의 합성 인물 대체가 그 요구를 대신 충족합니다.</div>
     </div>
 
     <div class="card dark">
@@ -894,7 +905,7 @@ DeepSORT · ByteTrack</div></div>
 
     <div style="display:flex;flex-direction:column;gap:14px">
       <div style="display:flex;flex-direction:column;gap:7px">
-        <div class="h2l">Q6</div>
+        <div class="h2l">Q7</div>
         <div class="h2t">삼성의 기존 기술과 어떻게 연결되나요?</div>
       </div>
       <div class="dtbl">
@@ -930,6 +941,37 @@ DeepSORT · ByteTrack</div></div>
         </div>
       </div>
       <div class="strong">새로운 하드웨어를 추가하는 방식이 아니라, 기존 Galaxy 생태계 자산을 Privacy-by-Default UX로 통합하는 소프트웨어 혁신</div>
+    </div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div class="h2l">KNOWN LIMITATIONS</div>
+        <div class="h2t">알려진 한계 — 먼저 밝힙니다</div>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="ttl" style="font-size:15px">마스킹 이전 영상이 글래스를 벗어납니다</div>
+          <div class="bd" style="font-size:13px">선행 연구는 글래스에서 캡처 시점에 마스킹하지만 본 제안은 폰에서 마스킹합니다. 전송·처리 구간에 마스킹 전 데이터가 존재합니다. Knox 채널 암호화·격리 처리·즉시 삭제로 방어하되, 노출 구간이 더 넓다는 사실은 인정합니다. 대신 얻는 연산이 전신 마스킹과 개인별 해제를 가능하게 합니다.</div>
+        </div>
+        <div class="card">
+          <div class="ttl" style="font-size:15px">제스처는 동의의 증명 수단이 아닙니다</div>
+          <div class="bd" style="font-size:13px">제3자 방식은 누가 언제 수락했는지 기록을 남기지만, 제스처는 그 순간의 의사 표시일 뿐 기록되지 않아 사후 분쟁에서 증명력이 약합니다. 제스처를 법적 동의가 아닌 UX 신호로 정의한 것은 이 한계를 전제한 선택입니다.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="ttl" style="font-size:15px">음성은 다루지 않습니다</div>
+          <div class="bd" style="font-size:13px">보호 범위는 영상에 한정됩니다. 선행 연구도 음성을 한계로 인정했고, 비착용자들은 목소리만으로도 지인에게 식별된다며 음성 보호를 요구했습니다. 향후 과제로 남깁니다.</div>
+        </div>
+        <div class="card">
+          <div class="ttl" style="font-size:15px">얼굴 밖 단서가 완전히 사라지지는 않습니다</div>
+          <div class="bd" style="font-size:13px">전신 마스킹은 걸음걸이·체형 재식별을 우연 수준까지 낮추지만 인물 주변 맥락은 남습니다. 소지품이나 장소의 특수성으로 추정이 가능합니다.</div>
+        </div>
+        <div class="card">
+          <div class="ttl" style="font-size:15px">본 조건의 실측치는 없습니다</div>
+          <div class="bd" style="font-size:13px">인용한 제스처 수치는 모두 착용자 측 또는 스마트폰 환경의 값입니다. 비착용자가 글래스를 향해 손바닥을 드는 조건의 실측치는 존재하지 않아, 3m·9%를 상한으로 삼고 대면 테스트로 확보합니다.</div>
+        </div>
+      </div>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:14px">
@@ -969,7 +1011,7 @@ DeepSORT · ByteTrack</div></div>
 
 <section class="sheet" id="pg6">
 <div class="sheetlabel">P6 차별화 포인트</div>
-<div class="page" style="height:2050px">
+<div class="page" style="height:2600px">
 <div class="trow">
   <div class="lab">차별화 포인트</div>
   <div class="cont">
@@ -979,13 +1021,19 @@ DeepSORT · ByteTrack</div></div>
       <h1 class="stitle">선행 연구는 있습니다. 다른 것은 동의를 받는 방법입니다</h1>
     </div>
 
+    <div class="callout" style="border:2px solid #000;border-radius:12px;padding:18px 22px;font-size:14px;line-height:1.6">
+      먼저 겹치는 부분을 분명히 합니다. 기본값으로 사람을 가리고, 비착용자가 아무것도 하지 않아도 보호되며, 동의한 사람만 개별 복원하고, 품질은 합성 대체로 회복하며, 글래스와 폰이 역할을 나눕니다. <b>여기까지는 선행 연구와 같습니다.</b> 전신 마스킹도 MIRAGE가 먼저입니다. 본 제안은 구조의 새로움을 주장하지 않습니다.<br><br>
+      차이는 하나로 수렴합니다. <b>동의를 언제, 어떻게 받느냐.</b> 그 하나에서 필요한 인프라, 전송되는 개인 정보, 실제로 작동하는 상황의 범위가 모두 갈립니다.
+    </div>
+
     <div class="card dark">
       <div class="big">01</div>
       <div class="ttl">선행 연구가 막힌 지점을 정확히 해결합니다</div>
       <div class="bd">‘기본 보호 + 동의 시 복원’이라는 구조 자체는 본 제안이 처음이 아닙니다. CHI 2026의 See Me If You Can과 2026년 9월 공개된 MIRAGE가 같은 구조를 제시했습니다. 접근의 타당성이 이미 검증되었다는 뜻이며, 본 제안은 그 위에서 남은 문제를 풉니다.</div>
       <div class="bd">See Me If You Can은 동의를 <b>촬영이 끝난 뒤 신뢰된 제3자를 거쳐</b> 요청합니다. 연구 안에서 세 가지 한계가 드러났습니다. 비착용자가 플랫폼에 미리 가입돼 있어야 하고(착용자들은 “그 프로토콜을 쓰지 않는 사람”, “폰이 없는 사람”에게는 보내지 않겠다고 답함), 착용자 다수가 <b>낯선 사람에게는 요청 자체를 거부</b>했으며, 여러 장을 찍고 고르는 실제 습관에서 <b>동의 피로</b>가 심해 인원이 많으면 절차를 포기했습니다. 연구는 이 동의 피로를 미해결 과제로 남겼습니다.</div>
       <div class="bd">MIRAGE는 전신 보호를 강화했지만 합성 인물 생성을 <b>신뢰할 수 없는 외부 클라우드</b>에 의존합니다.</div>
-      <div class="bd">본 제안은 동의를 현장에서 즉시 받습니다. 요청을 보내지 않으므로 동의 피로도, 알림도, 거절 기록도 생기지 않습니다. 가입이 필요 없으므로 낯선 사람에게도, 앱을 쓰지 않는 고령층에게도 작동합니다. 클라우드를 쓰지 않으므로 외부 전송 위험도 없습니다.</div>
+      <div class="bd">본 제안은 동의를 현장에서 즉시 받습니다. 요청을 보내지 않으므로 동의 피로도, 알림도, 거절 기록도 생기지 않습니다. 별도 설치나 가입이 없으므로 앱을 쓰지 않는 사람에게도 적용됩니다. 클라우드를 쓰지 않으므로 외부 전송 위험도 없습니다.</div>
+      <div class="bd">다만 본 제안도 사전 지식이 완전히 불필요하지는 않습니다. 비착용자가 ‘손바닥을 들면 촬영에 포함된다’는 규칙을 알아야 허용을 표현할 수 있습니다. 선행 연구가 <b>플랫폼 가입</b>을 요구한다면 본 제안은 <b>관습의 인지</b>를 요구하는 셈입니다. 무게는 다릅니다. 설치와 가입은 개별 행동과 계정이 필요하지만 관습은 한 번 퍼지면 비용이 들지 않고, 이미 Galaxy 카메라에서 쓰이던 제스처라 확산 비용마저 낮습니다. 규칙을 모르는 사람에게는 보호가 기본값으로 유지되므로 인지 부족이 침해로 이어지지 않습니다.</div>
       <div class="dtbl" style="margin-top:6px">
         <div class="dr">
           <div class="dc hd" style="width:200px;flex:none">구분</div>
@@ -1009,8 +1057,13 @@ DeepSORT · ByteTrack</div></div>
         </div>
         <div class="dr">
           <div class="dc fc" style="width:200px;flex:none;background:#fff">낯선 사람 대응</div>
-          <div class="dc" style="flex:1;background:#fff">착용자가 요청 자체를 회피</div>
-          <div class="dc hl" style="flex:1">동일하게 작동</div>
+          <div class="dc" style="flex:1;background:#fff">착용자가 요청 자체를 회피 (연구 내 관찰)</div>
+          <div class="dc hl" style="flex:1">동일하게 작동, 단 제스처 인지 필요</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none;background:#fff">비착용자 사전 부담</div>
+          <div class="dc" style="flex:1;background:#fff">앱 설치와 계정 가입</div>
+          <div class="dc hl" style="flex:1">관습 인지 (설치·가입 불필요)</div>
         </div>
         <div class="dr">
           <div class="dc fc" style="width:200px;flex:none;background:#fff">합성 처리 위치</div>
@@ -1101,7 +1154,13 @@ DeepSORT · ByteTrack</div></div>
         </div>
         <div class="dr">
           <div class="dc fc" style="width:200px;flex:none">우회 가능성</div>
-          <div class="dc" style="flex:1">LED 가림·제거 사례 다수</div>
+          <div class="dc" style="flex:1">LED 가림·제거 사례 다수, 착용자가 카메라를 끄면 무력화</div>
+          <div class="dc" style="flex:1">해당 없음</div>
+          <div class="dc hl" style="flex:1">착용자가 끌 수 없는 상시 활성 — 우회 경로 자체를 두지 않음</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none">처리 위치</div>
+          <div class="dc" style="flex:1">글래스 내 촬영</div>
           <div class="dc" style="flex:1">해당 없음</div>
           <div class="dc hl" style="flex:1">클라우드 전송 없이 Galaxy 스마트폰에서 On-device 처리</div>
         </div>

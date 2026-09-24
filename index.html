@@ -592,7 +592,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <div class="ttl">손바닥 제스처로 촬영 허용 표시</div>
         <ul class="bl">
           <li>손바닥 펴 보이기(Show Palm) = 허용</li>
-          <li>주먹 쥐기·손 내림 = 철회</li>
+          <li>주먹 쥐기 = 철회 (손 내림은 철회 아님)</li>
           <li>익숙한 Galaxy 제스처를 확장</li>
         </ul>
       </div>
@@ -665,8 +665,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         </div>
         <div class="card">
           <div class="chip">철회</div>
-          <div class="ttl sm">주먹을 쥐거나 손을 내리면 다시 보호</div>
-          <div class="bd">철회 제스처가 감지되면 해당 인물은 즉시 재마스킹됩니다. 사후에는 갤러리 편집으로도 철회할 수 있습니다.</div>
+          <div class="ttl sm">주먹을 쥐면 다시 보호</div>
+          <div class="bd">철회는 <b>주먹</b>이라는 명시적 제스처로만 이루어집니다. 영상 내내 손바닥을 들고 있을 수는 없으므로, 손을 내려도 허용 상태는 <b>ID 추적으로 유지</b>됩니다. 프레임을 벗어났다 돌아오면 추적이 끊겨 기본 마스킹으로 되돌아갑니다. 사후에는 갤러리 편집으로도 철회할 수 있습니다.</div>
           <div class="illus">
             <div class="pfig">
               <svg width="63" height="103" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"/><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"/><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#9A9A9A"/><rect x="5.2" y="36" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="46" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="56" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="66" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="76" width="41.6" height="3.4" fill="#fff"/></svg>

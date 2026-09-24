@@ -74,14 +74,18 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg2 .slabel{font-size:12px;font-weight:900;letter-spacing:.1em}
 #pg2 .stitle{font-size:28px;font-weight:900;line-height:1.38;margin:0}
 #pg2 .ssub{font-size:15px;color:#6B6B6B;line-height:1.55}
+#pg2 .h2l{font-size:11px;font-weight:900;letter-spacing:.1em}
+#pg2 .h2t{font-size:22px;font-weight:900;line-height:1.4}
 #pg2 .row{display:flex;gap:22px;align-items:stretch}
 #pg2 .row3{display:flex;gap:19px;align-items:stretch}
+#pg2 .row4{display:flex;gap:14px;align-items:stretch}
 #pg2 .card{flex:1;min-width:0;border:1px solid #DCDCDC;border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:9px;background:#fff}
 #pg2 .card.dark{background:#000;border-color:#000;color:#fff}
 #pg2 .big{font-size:26px;font-weight:900;line-height:1.15}
-#pg2 .stat{font-size:32px;font-weight:900;line-height:1.15}
+#pg2 .stat{font-size:34px;font-weight:900;line-height:1.12}
 #pg2 .ttl{font-size:18px;font-weight:700;line-height:1.42}
 #pg2 .bd{font-size:13px;line-height:1.55}
+#pg2 .card.dark .bd{color:#D8D8D8}
 #pg2 ul.bl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
 #pg2 ul.bl li{display:flex;gap:8px;font-size:14px;line-height:1.52}
 #pg2 ul.bl li::before{content:"—";font-weight:700;flex:none}
@@ -93,9 +97,11 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg2 .arr{display:flex;align-items:center;font-size:14px;font-weight:700}
 #pg2 .illus{border:1px solid #DCDCDC;border-radius:10px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#fff}
 #pg2 .cap{font-size:11px;font-weight:700;color:#6B6B6B;text-align:center}
-#pg2 .mini{flex:1;min-width:0;border:1px solid #DCDCDC;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:5px}
-#pg2 .minit{font-size:12px;font-weight:700;line-height:1.35}
-#pg2 .minib{font-size:10px;line-height:1.5;color:#111}
+#pg2 .mini{flex:1;min-width:0;border:1px solid #DCDCDC;border-radius:10px;padding:13px;display:flex;flex-direction:column;gap:5px}
+#pg2 .mini.hl{border-color:#000;border-width:2px}
+#pg2 .minih{font-size:9px;font-weight:900;letter-spacing:.08em;color:#6B6B6B}
+#pg2 .minit{font-size:13px;font-weight:700;line-height:1.35}
+#pg2 .minib{font-size:11px;line-height:1.5}
 #pg2 .banner{background:#000;color:#fff;border-radius:12px;padding:34px;display:flex;flex-direction:column;gap:10px}
 #pg2 .footer{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#6B6B6B}
 #pg2 .footer b{color:#000;font-weight:700}
@@ -138,6 +144,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg3 .cap.on{color:#000}
 #pg3 .pfig{display:flex;align-items:flex-start;gap:6px}
 #pg3 .note{font-size:11px;color:#6B6B6B;line-height:1.55}
+#pg3 .callout{border:2px solid #000;border-radius:12px;padding:18px 22px;font-size:14px;line-height:1.55}
 #pg3 .footer{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#6B6B6B}
 #pg3 .footer b{color:#000;font-weight:700}
 
@@ -202,6 +209,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg5 .card.dark .chip{background:#fff;color:#000;border-color:#fff}
 #pg5 .ttl{font-size:17px;font-weight:700;line-height:1.42}
 #pg5 .bd{font-size:14px;line-height:1.55}
+#pg5 .bd+.bd{margin-top:2px}
 #pg5 .card.dark .bd{color:#D8D8D8}
 #pg5 .dtbl{display:flex;flex-direction:column}
 #pg5 .dr{display:flex}
@@ -233,7 +241,12 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 #pg6 .big{font-size:24px;font-weight:900;line-height:1.15}
 #pg6 .ttl{font-size:18px;font-weight:700;line-height:1.42}
 #pg6 .bd{font-size:14px;line-height:1.55}
+#pg6 .bd+.bd{margin-top:2px}
 #pg6 .card.dark .bd{color:#D8D8D8}
+#pg6 ul.bl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+#pg6 ul.bl li{display:flex;gap:8px;font-size:14px;line-height:1.52}
+#pg6 ul.bl li::before{content:"—";font-weight:700;flex:none}
+#pg6 .card.dark ul.bl li{color:#D8D8D8}
 #pg6 .illus{border:1px solid #DCDCDC;border-radius:10px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#fff;margin-top:2px}
 #pg6 .people{display:flex;align-items:flex-end;justify-content:center;gap:26px}
 #pg6 .pcol{display:flex;flex-direction:column;align-items:center;gap:8px}
@@ -321,7 +334,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <div style="font-size:30px;font-weight:700;line-height:1.4">가리는 게 기본, 보여주는 건 선택</div>
         <div style="font-size:18px;line-height:1.55;opacity:.75">사람을 기본적으로 보호하고, 동의한 사람만 담는 스마트 글래스 촬영 경험</div>
         <div class="pills">
-          <div class="pill">Privacy-by-Default 마스킹</div>
+          <div class="pill">Privacy-by-Default 전신 마스킹</div>
           <div class="pill">Show Palm 제스처로 허용</div>
           <div class="pill">Galaxy On-device AI</div>
         </div>
@@ -376,10 +389,10 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
           <div class="chip">TO-BE · Consent by Gesture</div>
           <div class="ttl">결과물에서 사람을 기본 마스킹한다</div>
           <ul class="bl">
-            <li>보호 방식 — 인물을 기본 마스킹, 동의 시에만 해제</li>
+            <li>보호 방식 — 인물 전신을 기본 마스킹, 동의 시에만 해제</li>
             <li>보호 주체 — 시스템이 기본값으로 보호</li>
             <li>허용 단위 — 인물별 개별 허용(개인별 선택적 언마스킹)</li>
-            <li>연산 위치 — 글래스 + Galaxy 스마트폰 On-device AI</li>
+            <li>연산 위치 — 글래스 + Galaxy 스마트폰 On-device AI (클라우드 전송 없음)</li>
           </ul>
         </div>
       </div>
@@ -411,7 +424,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 
 <section class="sheet" id="pg2">
 <div class="sheetlabel">P2 제안 배경</div>
-<div class="page" style="height:1700px">
+<div class="page" style="height:1900px">
 <div class="trow">
   <div class="lab">제안 배경</div>
   <div class="cont">
@@ -424,12 +437,16 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 
     <div class="row3">
       <div class="card" style="padding:20px;gap:6px">
-        <div class="stat">10만+</div>
-        <div class="bd">주변 스마트 안경을 BLE로 탐지해 알려주는 앱 ‘Nearby Glasses’ 누적 다운로드 (Google Play, 2026.09)</div>
+        <div class="stat">65~90%</div>
+        <div class="bd">민감한 맥락에서 <b>방어 행동을 취하겠다</b>고 답한 비착용자 비율 (CHI 2026 ‘Mind the Gap’, 설문 N=525)</div>
       </div>
       <div class="card" style="padding:20px;gap:6px">
-        <div class="stat">12가지</div>
-        <div class="bd">학계가 검토해 온 비착용자 프라이버시 보호 기술 접근 (Mind the Gap)</div>
+        <div class="stat">200만 대</div>
+        <div class="bd">Ray-Ban Meta 스마트 글래스 글로벌 누적 판매량 — 논란을 감당할 시장 규모에 이미 도달 (동 연구 인용)</div>
+      </div>
+      <div class="card" style="padding:20px;gap:6px">
+        <div class="stat">10만+</div>
+        <div class="bd">주변 스마트 안경을 BLE로 탐지해 알려주는 앱 ‘Nearby Glasses’ 누적 다운로드 (Google Play, 2026.09)</div>
       </div>
     </div>
 
@@ -449,18 +466,17 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <ul class="bl">
           <li>밝은 환경·거리에서는 LED가 보이지 않고, 화각 밖 사람에게도 보여 모두가 불안</li>
           <li>LED 훼손 시 카메라 비활성화 조치(세계일보, 2026.07)에도 드릴 제거 사례(WSJ), 유튜브·레딧 공유, 감지앱 ‘Zuckoff’ 등장</li>
-          <li>비착용자가 직접 탐지 도구를 설치하는 상황 — BLE로 주변 스마트 안경을 알려주는 앱 ‘Nearby Glasses’ 누적 10만+ 다운로드 (Google Play)</li>
-          <li>표시등 고지만으로는 촬영 사실을 담보할 수 없음</li>
+          <li>비착용자가 직접 탐지 도구를 설치하는 상황 — ‘Nearby Glasses’ 누적 10만+ 다운로드</li>
         </ul>
         <div class="illus">
           <svg width="200" height="70" viewBox="0 0 170 60" aria-hidden="true">
-            <rect x="18" y="14" width="55" height="31" rx="10" fill="none" stroke="#000" stroke-width="3"></rect>
-            <rect x="97" y="14" width="55" height="31" rx="10" fill="none" stroke="#000" stroke-width="3"></rect>
-            <rect x="73" y="26" width="24" height="3.5" rx="1.75" fill="#000"></rect>
-            <rect x="0" y="18" width="19" height="3.5" rx="1.75" fill="#000"></rect>
-            <rect x="151" y="18" width="19" height="3.5" rx="1.75" fill="#000"></rect>
-            <circle cx="140" cy="8" r="5" fill="#000"></circle>
-            <circle cx="140" cy="8" r="11" fill="none" stroke="#9A9A9A" stroke-width="1.8"></circle>
+            <rect x="18" y="14" width="55" height="31" rx="10" fill="none" stroke="#000" stroke-width="3"/>
+            <rect x="97" y="14" width="55" height="31" rx="10" fill="none" stroke="#000" stroke-width="3"/>
+            <rect x="73" y="26" width="24" height="3.5" rx="1.75" fill="#000"/>
+            <rect x="0" y="18" width="19" height="3.5" rx="1.75" fill="#000"/>
+            <rect x="151" y="18" width="19" height="3.5" rx="1.75" fill="#000"/>
+            <circle cx="140" cy="8" r="5" fill="#000"/>
+            <circle cx="140" cy="8" r="11" fill="none" stroke="#9A9A9A" stroke-width="1.8"/>
           </svg>
           <div class="cap">작은 LED 하나로는 촬영 사실을 담보할 수 없습니다</div>
         </div>
@@ -488,23 +504,47 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
       </div>
       <div class="card">
         <div class="big">04</div>
-        <div class="ttl">Wearer와 Bystander를 함께 고려하는 새로운 접근</div>
+        <div class="ttl">학계는 답을 찾았지만, 상용화 경로가 비어 있습니다</div>
         <ul class="bl">
-          <li>글래스는 촬영자만의 개인 기기가 아니라, 착용자·비착용자 모두가 경험의 영향을 받는 기기</li>
-          <li>학계에서는 Bystander Privacy 연구가 활발하지만, 확인된 범위에서는 상용 제품의 기본 UX로 채택한 사례가 아직 없음</li>
-          <li>Galaxy는 보유 기술로 이를 가장 먼저 제품화할 수 있는 위치</li>
+          <li>2025~2026년에 연구가 집중 — 네 편 모두 ‘기본 보호 + 동의 시 복원’ 구조에 도달. 접근의 타당성은 이미 검증</li>
+          <li>그러나 동의를 받는 방법에서 같은 지점에 막힘 — 제3자 가입 전제, 외부 클라우드 의존, 촬영 이후 요청</li>
+          <li>확인된 범위에서 이를 상용 제품 기본 UX로 채택한 사례는 아직 없음</li>
         </ul>
-        <div style="display:flex;gap:10px;align-items:stretch">
-          <div class="mini"><div class="minit">See Me If You Can</div><div class="minib">기본 블러 → 동의 시 복원 3단계 프로토콜 검증</div></div>
-          <div class="mini"><div class="minit">BLINDSPOT</div><div class="minib">비착용자 손 제스처로 블러 여부 실시간 제어</div></div>
-          <div class="mini"><div class="minit">Mind the Gap</div><div class="minib">비착용자 보호 12가지 접근 비교</div></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div class="h2l">PRIOR WORK</div>
+        <div class="h2t">구조는 검증됐습니다. 남은 문제는 동의를 어떻게 받느냐입니다</div>
+      </div>
+      <div class="row4">
+        <div class="mini hl">
+          <div class="minih">CHI 2026</div>
+          <div class="minit">See Me If You Can</div>
+          <div class="minib">기본 블러 → 동의 시 선택적 복원. 동의는 <b>사후에 신뢰된 제3자(TTP)</b>를 거쳐 요청하며 비착용자의 플랫폼 가입이 필요. 동의 피로를 미해결 과제로 남김</div>
+        </div>
+        <div class="mini hl">
+          <div class="minih">arXiv 2026.09</div>
+          <div class="minit">MIRAGE</div>
+          <div class="minib">전신 프라이버시 + 합성 전신 대체 + 동의 기반 복원. 합성 생성을 <b>외부 클라우드</b> 백엔드에 의존</div>
+        </div>
+        <div class="mini">
+          <div class="minih">CHI 2026</div>
+          <div class="minit">Mind the Gap</div>
+          <div class="minib">설문 N=525·인터뷰 N=20. PET 12가지를 비교해 네 가지 트레이드오프를 도출</div>
+        </div>
+        <div class="mini">
+          <div class="minih">arXiv 2025.12</div>
+          <div class="minit">BLINDSPOT</div>
+          <div class="minib">비착용자 신호 방식 3종(제스처·LED·UWB) 비교. 제스처는 지연 160ms·인식 거리 3m</div>
         </div>
       </div>
     </div>
 
     <div class="banner">
       <div style="font-size:12px;font-weight:900;letter-spacing:.1em;opacity:.6">우리의 답</div>
-      <div style="font-size:22px;font-weight:700;line-height:1.45">촬영 상태를 더 크게 알리는 방식이 아니라, 촬영되는 사람을 기본적으로 보호하고 동의가 있을 때만 식별 가능한 모습으로 남기는 방식으로</div>
+      <div style="font-size:22px;font-weight:700;line-height:1.45">촬영이 끝난 뒤 제3자를 거쳐 묻지 않습니다. 그 사람이 그 자리에 있는 순간에, 손바닥 한 번으로 끝냅니다</div>
     </div>
 
   </div>
@@ -515,7 +555,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
 
 <section class="sheet" id="pg3">
 <div class="sheetlabel">P3 제안 내용 ① 핵심 기능</div>
-<div class="page" style="height:2050px">
+<div class="page" style="height:2150px">
 <div class="trow">
   <div class="lab">제안 내용</div>
   <div class="cont">
@@ -523,16 +563,16 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
     <div style="display:flex;flex-direction:column;gap:10px">
       <div class="slabel">FEATURES</div>
       <h1 class="stitle">알리지 말고, 보호하라 — 세 가지 핵심 기능</h1>
-      <div class="ssub">촬영 시작 → 인물 감지 → 기본 마스킹 → 제스처로 허용 표시 → 해당 인물만 해제 → 스마트폰에서 최종 처리·저장</div>
+      <div class="ssub">촬영 시작 → 인물 감지 → 전신 기본 마스킹 → 제스처로 허용 표시 → 해당 인물만 해제 → 스마트폰에서 최종 처리·저장</div>
     </div>
 
     <div class="row3">
       <div class="card">
         <div class="chip">KEY FEATURE 1</div>
-        <div class="ttl">Privacy-by-Default 기본 마스킹</div>
+        <div class="ttl">Privacy-by-Default 전신 기본 마스킹</div>
         <ul class="bl">
           <li>화면 속 사람을 객체(인스턴스) 단위로 감지</li>
-          <li>별도 동작 없이 기본적으로 마스킹</li>
+          <li>별도 동작 없이 전신 실루엣을 기본 마스킹</li>
           <li>‘모르면 더 가린다’ Fail-safe 원칙</li>
         </ul>
       </div>
@@ -559,38 +599,39 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
     <div style="display:flex;flex-direction:column;gap:14px">
       <div style="display:flex;flex-direction:column;gap:7px">
         <div class="h2l">KEY FEATURE 1 · DETAIL</div>
-        <div class="h2t">마스킹 범위는 얼굴 중심, 불확실할 때는 전신으로 확장</div>
+        <div class="h2t">왜 얼굴이 아니라 전신인가 — 얼굴만 가려도 걸음걸이로 특정됩니다</div>
       </div>
       <div class="row3">
         <div class="card">
-          <div class="big">−34%p</div>
-          <div class="ttl">전신 블러</div>
-          <div class="bd">식별성은 제거되지만 키포인트 인식 성능이 최대 34%p 저하 → 영상 품질 손실이 큼</div>
+          <div class="big">90.25%</div>
+          <div class="ttl">얼굴만 마스킹</div>
+          <div class="bd">통상적인 얼굴 익명화 이후에도 보행 기반 재식별이 Rank-1 90.25%에 이릅니다. 걸음걸이·자세·실루엣이 그대로 남기 때문입니다.</div>
           <div class="illus">
-            <svg width="70" height="114" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"></rect><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"></rect><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#9A9A9A"></path><rect x="5.2" y="40" width="41.6" height="3" fill="#fff"></rect><rect x="5.2" y="52" width="41.6" height="3" fill="#fff"></rect><rect x="5.2" y="64" width="41.6" height="3" fill="#fff"></rect><rect x="5.2" y="76" width="41.6" height="3" fill="#fff"></rect></svg>
-            <div class="cap">전신 마스킹</div>
+            <svg width="70" height="114" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"/><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"/><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"/></svg>
+            <div class="cap">얼굴만 가림 · 체형과 보행은 노출</div>
           </div>
         </div>
         <div class="card dark">
-          <div class="big">−10%p</div>
-          <div class="ttl">얼굴 블러 (기본값)</div>
-          <div class="bd">식별 가능성 대부분 제거, 품질 저하는 10%p 수준. 인식 신뢰도가 낮을 때만 전신으로 확장</div>
+          <div class="big">10.86%</div>
+          <div class="ttl">전신 마스킹 (기본값)</div>
+          <div class="bd">전신 바운딩 박스 마스킹을 적용하면 실루엣 기반 재식별이 10.86%로 떨어져, 측정된 우연 수준 11.12%와 사실상 구분되지 않습니다.</div>
           <div class="illus" style="background:#fff;border-color:#333">
-            <svg width="70" height="114" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"></rect><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"></rect><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
-            <div class="cap">얼굴 마스킹</div>
+            <svg width="70" height="114" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"/><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"/><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#9A9A9A"/><rect x="5.2" y="36" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="46" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="56" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="66" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="76" width="41.6" height="3.4" fill="#fff"/></svg>
+            <div class="cap on">전신 실루엣 마스킹</div>
           </div>
         </div>
         <div class="card">
-          <div class="big" style="font-size:26px">품질 보존</div>
-          <div class="ttl">합성 얼굴 대체 (Phase 2)</div>
-          <div class="bd">원본 얼굴을 합성 얼굴로 바꿔 ‘그 자리에 사람이 있었다’는 정보는 보존 (Ego4D 검증)</div>
+          <div class="big">26.20%</div>
+          <div class="ttl">적응형 공격자에 대해서도</div>
+          <div class="bd">마스킹된 자세 신호로 재학습한 공격자를 가정해도 보행 재식별은 90.25%에서 26.20%로 떨어져, 공격자의 식별 우위 72.5%가 제거됩니다.</div>
           <div class="illus">
-            <svg width="70" height="114" viewBox="0 0 52 85" aria-hidden="true"><circle cx="26" cy="11" r="10" fill="none" stroke="#000" stroke-width="2.5"></circle><circle cx="22" cy="9.5" r="1.8" fill="#000"></circle><circle cx="30" cy="9.5" r="1.8" fill="#000"></circle><rect x="22" y="15" width="8" height="1.8" rx="0.9" fill="#000"></rect><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
-            <div class="cap">합성 얼굴 대체</div>
+            <svg width="70" height="114" viewBox="0 0 52 85" aria-hidden="true"><circle cx="26" cy="11" r="10" fill="none" stroke="#000" stroke-width="2.5"/><circle cx="22" cy="9.5" r="1.8" fill="#000"/><circle cx="30" cy="9.5" r="1.8" fill="#000"/><rect x="22" y="15" width="8" height="1.8" rx="0.9" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="none" stroke="#000" stroke-width="2.5"/></svg>
+            <div class="cap">Phase 2 · 합성 인물 대체</div>
           </div>
         </div>
       </div>
-      <div class="note">출처: Does Image Anonymization Impact Computer Vision Training? (arXiv 2306.05135) / Towards Face De-identification for Wearable Cameras (ACM)</div>
+      <div class="callout">전신 마스킹은 영상 품질 손실이 큽니다(키포인트 인식 최대 −34%p). 그래서 <b>Phase 1은 보호를 우선</b>하고, <b>Phase 2에서 마스킹 영역을 합성 인물로 대체</b>해 행동·제스처·상호작용은 보존하면서 식별성만 제거합니다.</div>
+      <div class="note">출처: MIRAGE — Full-Body Bystander Privacy for Smart Glasses (arXiv 2609.24537) / Does Image Anonymization Impact Computer Vision Training? (arXiv 2306.05135)</div>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:14px">
@@ -602,11 +643,11 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <div class="card">
           <div class="chip">허용</div>
           <div class="ttl sm">손바닥을 펴 보이면 나만 선명하게</div>
-          <div class="bd">카메라를 향해 손바닥을 펴 보이면 그 인물의 마스킹만 해제됩니다. ‘카메라에 손바닥을 보이면 찍힌다’는 직관은 이미 학습되어 있어 별도 안내가 필요 없습니다.</div>
+          <div class="bd">카메라를 향해 손바닥을 펴 보이면 그 인물의 마스킹만 해제됩니다. 카메라 앞에서 손을 들어 보이는 행위는 이미 존재하는 사회적 관행이어서 별도 안내가 필요 없습니다.</div>
           <div class="illus">
             <div class="pfig">
-              <svg width="63" height="103" viewBox="0 0 52 85" aria-hidden="true"><circle cx="26" cy="11" r="11" fill="#000"></circle><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
-              <svg width="32" height="38" viewBox="0 0 34 40" aria-hidden="true"><rect x="5" y="14" width="24" height="24" rx="7" fill="#000"></rect><rect x="7.5" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="13.1" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="18.7" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="24.3" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="1" y="18" width="5" height="11" rx="2.5" fill="#000"></rect></svg>
+              <svg width="63" height="103" viewBox="0 0 52 85" aria-hidden="true"><circle cx="26" cy="11" r="11" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"/></svg>
+              <svg width="32" height="38" viewBox="0 0 34 40" aria-hidden="true"><rect x="5" y="14" width="24" height="24" rx="7" fill="#000"/><rect x="7.5" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="13.1" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="18.7" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="24.3" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="1" y="18" width="5" height="11" rx="2.5" fill="#000"/></svg>
             </div>
             <div class="cap on">손바닥 → 마스킹 해제</div>
           </div>
@@ -617,8 +658,8 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
           <div class="bd">철회 제스처가 감지되면 해당 인물은 즉시 재마스킹됩니다. 사후에는 갤러리 편집으로도 철회할 수 있습니다.</div>
           <div class="illus">
             <div class="pfig">
-              <svg width="63" height="103" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"></rect><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"></rect><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
-              <svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true"><rect x="5" y="11" width="24" height="22" rx="8" fill="#000"></rect><rect x="7.5" y="8" width="4" height="6" rx="2" fill="#000"></rect><rect x="13.1" y="8" width="4" height="6" rx="2" fill="#000"></rect><rect x="18.7" y="8" width="4" height="6" rx="2" fill="#000"></rect><rect x="24.3" y="8" width="4" height="6" rx="2" fill="#000"></rect></svg>
+              <svg width="63" height="103" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"/><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"/><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#9A9A9A"/><rect x="5.2" y="36" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="46" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="56" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="66" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="76" width="41.6" height="3.4" fill="#fff"/></svg>
+              <svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true"><rect x="5" y="11" width="24" height="22" rx="8" fill="#000"/><rect x="7.5" y="8" width="4" height="6" rx="2" fill="#000"/><rect x="13.1" y="8" width="4" height="6" rx="2" fill="#000"/><rect x="18.7" y="8" width="4" height="6" rx="2" fill="#000"/><rect x="24.3" y="8" width="4" height="6" rx="2" fill="#000"/></svg>
             </div>
             <div class="cap on">주먹 → 즉시 재마스킹</div>
           </div>
@@ -626,7 +667,7 @@ html,body{margin:0;padding:0;background:#E9E9E9;font-family:'Noto Sans KR',syste
         <div class="card dark">
           <div class="chip">정의</div>
           <div class="ttl sm">법적 ‘동의’가 아닌 UX 레벨의 ‘촬영 허용 신호’</div>
-          <div class="bd">제스처를 ‘이 순간 촬영되어도 괜찮다’는 허용 의사 표시로 정의해 생체정보·동의 철회 요건 등 법적 부담 없이 실현합니다. 허용된 인물에게는 명시적 피드백을 제공하고, 철회 제스처와 사후 편집을 통한 철회 수단을 함께 제공합니다.</div>
+          <div class="bd">제스처를 ‘이 순간 촬영되어도 괜찮다’는 허용 의사 표시로 정의해 생체정보·동의 철회 요건 등 법적 부담 없이 실현합니다. 강제력을 제공하는 것은 제스처가 아니라 시스템의 기본 마스킹이며, 제스처는 보호를 만드는 장치가 아니라 푸는 장치입니다.</div>
         </div>
       </div>
     </div>
@@ -694,7 +735,7 @@ DeepSORT · ByteTrack</div></div>
           <div class="cap">촬영 시작 → 전원 기본 마스킹</div>
         </div>
         <div class="fld"><div class="fldl">상황</div><div class="fldv">착용자가 붐비는 카페에서 친구와 함께 있는 순간을 글래스로 촬영 시작</div></div>
-        <div class="fld"><div class="fldl">시스템 동작</div><div class="fldv">글래스가 영상을 스마트폰으로 전송. On-device AI가 화면 속 모든 사람을 감지하고 기본 마스킹</div></div>
+        <div class="fld"><div class="fldl">시스템 동작</div><div class="fldv">글래스가 영상을 스마트폰으로 전송. On-device AI가 화면 속 모든 사람을 감지하고 전신 기본 마스킹</div></div>
       </div>
 
       <div class="card">
@@ -780,6 +821,7 @@ DeepSORT · ByteTrack</div></div>
           <ul class="bl">
             <li>원본(마스킹 전) 영상의 영구 저장</li>
             <li>원본 영상의 클라우드 전송</li>
+            <li>합성 처리를 위한 외부 생성 백엔드 전송</li>
             <li>타인의 얼굴 특징정보(생체인식정보)</li>
             <li>허용하지 않은 인물의 식별 가능한 모습</li>
           </ul>
@@ -805,7 +847,7 @@ DeepSORT · ByteTrack</div></div>
 
 <section class="sheet" id="pg5">
 <div class="sheetlabel">P5 제안 내용 ③ 기술 QnA·로드맵</div>
-<div class="page" style="height:1620px">
+<div class="page" style="height:1980px">
 <div class="trow">
   <div class="lab">제안 내용</div>
   <div class="cont">
@@ -819,12 +861,12 @@ DeepSORT · ByteTrack</div></div>
       <div class="card">
         <div class="chip">Q1</div>
         <div class="ttl">AI가 영상 속 사람을 안정적으로 감지·마스킹할 수 있나요?</div>
-        <div class="bd">네. Instance Segmentation은 MS-COCO(12만 장+), Cityscapes(5,000장 픽셀 주석) 벤치마크에서 고성능이 입증되었고 실시간 추적도 가능합니다. 삼성 My FanCam은 다수 인물 인식·지속 추적을 이미 상용화했습니다. 폐색·빠른 움직임에서의 오류는 ‘인식 불확실 시 마스킹 유지’ Fail-safe로 대응합니다.</div>
+        <div class="bd">Instance Segmentation은 MS-COCO·Cityscapes 벤치마크에서 고성능이 입증되었고 실시간 추적도 가능합니다. 전신 검출 자체도 최근 연구에서 AP 0.948 / AR 0.976 수준이 보고되었습니다. 삼성 My FanCam은 다수 인물 인식·지속 추적을 이미 상용화했습니다. 폐색·빠른 움직임에서의 오류는 ‘인식 불확실 시 마스킹 유지’ Fail-safe로 대응합니다.</div>
       </div>
       <div class="card">
         <div class="chip">Q2</div>
         <div class="ttl">마스킹은 언제 이루어지며, 원본에 누가 접근할 수 있나요?</div>
-        <div class="bd">스마트폰 On-device AI에서 수행되며 원본은 기기 밖으로 나가지 않습니다. Galaxy AI는 이미 Live Translate·Interpreter·Audio Eraser를 기기 내에서만 처리하고, ‘Process data only on device’ 설정으로 클라우드 처리를 완전히 제한할 수 있습니다. 원본 임시 데이터는 Knox Vault 격리 영역에서 처리 후 자동 삭제됩니다.</div>
+        <div class="bd">스마트폰 On-device AI에서 수행되며 원본은 Galaxy 기기 밖으로 나가지 않습니다. Galaxy AI는 이미 Live Translate·Interpreter·Audio Eraser를 기기 내에서만 처리하고, ‘Process data only on device’ 설정으로 클라우드 처리를 완전히 제한할 수 있습니다. 합성 처리를 외부 클라우드에 맡기는 선행 연구와 달리, 원본도 중간 표현도 내보내지 않습니다.</div>
       </div>
     </div>
 
@@ -832,7 +874,8 @@ DeepSORT · ByteTrack</div></div>
       <div class="card">
         <div class="chip">Q3</div>
         <div class="ttl">제스처 인식이 촬영 허용 의사 표시로 쓸 만큼 정확한가요?</div>
-        <div class="bd">CNN 기반 손 제스처 인식은 AR·스마트글래스 환경에서 83~97% 정확도로 보고되어 있습니다(97.12% AR 상호작용 시스템, 83.94% OpenGlass 온디바이스, 83.06% FaceSight). 다만 이 값들은 착용자 측 인식을 다룬 서로 다른 세 연구의 수치이며, 비착용자가 일정 거리에서 손바닥을 드는 본 제안의 조건을 측정한 것은 아닙니다. Galaxy에는 Show Palm UX가 이미 존재합니다. 오인식 시에도 기본값이 ‘보호’이므로 실패 비용이 낮습니다. 선행 연구(BLINDSPOT)의 약 3m 인식 거리·최대 9% 오탐률을 설계 기준값으로 참고합니다.</div>
+        <div class="bd">CNN 기반 손 제스처 인식은 AR·스마트글래스 환경에서 83~97%로 보고되어 있습니다(97.12% AR 상호작용 시스템, 83.94% OpenGlass 온디바이스, 83.06% FaceSight). 다만 이는 착용자 측 인식을 다룬 서로 다른 세 연구의 값이며, 비착용자가 일정 거리에서 손바닥을 드는 조건을 측정한 것은 아닙니다.</div>
+        <div class="bd">가장 근접한 BLINDSPOT은 제스처 방식이 기기 없이 약 160ms 지연을 내지만 인식 거리가 <b>약 3m로 제한</b>되고 세 신호 방식 중 유일하게 <b>오탐이 발생</b>한다고(최대 9% 수준) 보고했습니다. 본 제안은 이 3m·9%를 설계 상한으로 삼고 실제 정확도는 대면 테스트로 검증합니다. 오인식이 나더라도 기본값이 ‘보호’이므로 실패 비용이 낮습니다.</div>
       </div>
       <div class="card">
         <div class="chip">Q4</div>
@@ -841,9 +884,17 @@ DeepSORT · ByteTrack</div></div>
       </div>
     </div>
 
+    <div class="card dark">
+      <div class="chip">Q5</div>
+      <div class="ttl">선행 연구는 제스처 방식을 ‘사회적으로 어색하다’고 비판하는데, 괜찮은가요?</div>
+      <div class="bd">비판의 대상을 구분해야 합니다. 첫째는 비착용자가 <b>촬영을 거부하기 위해</b> 취하는 opt-out 제스처·프라이버시 팔찌·선호 브로드캐스트로, 비착용자에게 어색한 행동을 요구한다는 지적입니다. 본 제안은 방향이 반대입니다. 거부가 아니라 참여를 표현하는 행위이며, 아무것도 하지 않으면 보호되는 것이 기본값입니다.</div>
+      <div class="bd">둘째는 opt-in 제스처가 ‘강제력 있는 보장을 제공하지 못한다’는 지적입니다. 이는 제스처 자체가 보호 수단인 시스템에 해당합니다. 본 제안에서 강제력을 제공하는 것은 시스템의 기본 마스킹이며, 제스처는 보호를 푸는 장치입니다. 이 구조는 선행 연구의 기본 보호 계층과 동일합니다.</div>
+      <div class="bd">남는 지적은 ‘의미가 모호할 수 있다’는 것입니다. 선행 연구는 이런 방식이 실패하는 이유를 <b>“기존 사회적 관행 위에 쌓지 않고 낯선 협상 방식을 강요하기 때문”</b>이라고 진단했습니다. 본 제안은 그 기준을 충족합니다. Galaxy 카메라의 손바닥 촬영 제스처를 재사용하고, 카메라 앞에서 손을 들어 보이는 기존 관행 위에 얹기 때문입니다.</div>
+    </div>
+
     <div style="display:flex;flex-direction:column;gap:14px">
       <div style="display:flex;flex-direction:column;gap:7px">
-        <div class="h2l">Q5</div>
+        <div class="h2l">Q6</div>
         <div class="h2t">삼성의 기존 기술과 어떻게 연결되나요?</div>
       </div>
       <div class="dtbl">
@@ -875,7 +926,7 @@ DeepSORT · ByteTrack</div></div>
         <div class="dr">
           <div class="dc fc" style="width:260px;flex:none">생성형 편집 (갤러리)</div>
           <div class="dc" style="width:180px;flex:none">상용화</div>
-          <div class="dc" style="flex:1">배경 인물 제거·배경 보완 (확장 기능)</div>
+          <div class="dc" style="flex:1">합성 인물 대체·배경 보완 (확장 기능)</div>
         </div>
       </div>
       <div class="strong">새로운 하드웨어를 추가하는 방식이 아니라, 기존 Galaxy 생태계 자산을 Privacy-by-Default UX로 통합하는 소프트웨어 혁신</div>
@@ -889,18 +940,18 @@ DeepSORT · ByteTrack</div></div>
       <div class="row4">
         <div class="card dark" style="padding:18px">
           <div class="chip">PHASE 1 · MVP</div>
-          <div class="ttl" style="font-size:16px">제스처 기반 일회성 허용</div>
-          <div class="bd" style="font-size:12px">기본 얼굴 마스킹 + Fail-safe 전신 확장, 손바닥 허용·주먹 철회, 스마트폰 On-device 처리. 생체정보 미저장</div>
+          <div class="ttl" style="font-size:16px">전신 마스킹 + 제스처 허용</div>
+          <div class="bd" style="font-size:12px">전신 실루엣 기본 마스킹 + Fail-safe, 손바닥 허용·주먹 철회, 스마트폰 On-device 처리. 생체정보 미저장</div>
         </div>
         <div class="card" style="padding:18px">
           <div class="chip">PHASE 2</div>
-          <div class="ttl" style="font-size:16px">품질·편집 확장</div>
-          <div class="bd" style="font-size:12px">블러 대신 생성형 합성 얼굴 대체 옵션, 갤러리 생성형 편집으로 배경 인물 제거·배경 보완</div>
+          <div class="ttl" style="font-size:16px">합성 인물 대체로 품질 회복</div>
+          <div class="bd" style="font-size:12px">마스킹 영역을 합성 인물로 대체해 행동·상호작용은 보존하고 식별성만 제거. 갤러리 생성형 편집으로 배경 보완</div>
         </div>
         <div class="card" style="padding:18px">
           <div class="chip">PHASE 3 · 검토</div>
           <div class="ttl" style="font-size:16px">상시 퍼미션</div>
-          <div class="bd" style="font-size:12px">가족·지인 자동 언마스킹. 얼굴 특징정보는 별도 동의가 필요한 민감정보 → 생체정보를 저장하지 않는 대안(근접 신호·위치 기반) 검토 후 법무 검토</div>
+          <div class="bd" style="font-size:12px">가족·지인 자동 언마스킹. 얼굴 특징정보는 별도 동의가 필요한 민감정보 → 생체정보를 저장하지 않는 대안(근접 신호 등) 검토 후 법무 검토</div>
         </div>
         <div class="card" style="padding:18px">
           <div class="chip">PHASE 4</div>
@@ -918,45 +969,91 @@ DeepSORT · ByteTrack</div></div>
 
 <section class="sheet" id="pg6">
 <div class="sheetlabel">P6 차별화 포인트</div>
-<div class="page" style="height:1480px">
+<div class="page" style="height:2050px">
 <div class="trow">
   <div class="lab">차별화 포인트</div>
   <div class="cont">
 
     <div style="display:flex;flex-direction:column;gap:10px">
       <div class="slabel">KEY DIFFERENCE</div>
-      <h1 class="stitle">알리는(Notify) 프라이버시에서, 보호하는(Protect) 프라이버시로</h1>
+      <h1 class="stitle">선행 연구는 있습니다. 다른 것은 동의를 받는 방법입니다</h1>
+    </div>
+
+    <div class="card dark">
+      <div class="big">01</div>
+      <div class="ttl">선행 연구가 막힌 지점을 정확히 해결합니다</div>
+      <div class="bd">‘기본 보호 + 동의 시 복원’이라는 구조 자체는 본 제안이 처음이 아닙니다. CHI 2026의 See Me If You Can과 2026년 9월 공개된 MIRAGE가 같은 구조를 제시했습니다. 접근의 타당성이 이미 검증되었다는 뜻이며, 본 제안은 그 위에서 남은 문제를 풉니다.</div>
+      <div class="bd">See Me If You Can은 동의를 <b>촬영이 끝난 뒤 신뢰된 제3자를 거쳐</b> 요청합니다. 연구 안에서 세 가지 한계가 드러났습니다. 비착용자가 플랫폼에 미리 가입돼 있어야 하고(착용자들은 “그 프로토콜을 쓰지 않는 사람”, “폰이 없는 사람”에게는 보내지 않겠다고 답함), 착용자 다수가 <b>낯선 사람에게는 요청 자체를 거부</b>했으며, 여러 장을 찍고 고르는 실제 습관에서 <b>동의 피로</b>가 심해 인원이 많으면 절차를 포기했습니다. 연구는 이 동의 피로를 미해결 과제로 남겼습니다.</div>
+      <div class="bd">MIRAGE는 전신 보호를 강화했지만 합성 인물 생성을 <b>신뢰할 수 없는 외부 클라우드</b>에 의존합니다.</div>
+      <div class="bd">본 제안은 동의를 현장에서 즉시 받습니다. 요청을 보내지 않으므로 동의 피로도, 알림도, 거절 기록도 생기지 않습니다. 가입이 필요 없으므로 낯선 사람에게도, 앱을 쓰지 않는 고령층에게도 작동합니다. 클라우드를 쓰지 않으므로 외부 전송 위험도 없습니다.</div>
+      <div class="dtbl" style="margin-top:6px">
+        <div class="dr">
+          <div class="dc hd" style="width:200px;flex:none">구분</div>
+          <div class="dc hd" style="flex:1">선행 연구 (See Me If You Can, MIRAGE)</div>
+          <div class="dc hl" style="flex:1">Consent by Gesture</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none;background:#fff">동의 시점</div>
+          <div class="dc" style="flex:1;background:#fff">촬영 이후</div>
+          <div class="dc hl" style="flex:1">촬영 현장에서 실시간</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none;background:#fff">동의 경로</div>
+          <div class="dc" style="flex:1;background:#fff">신뢰된 제3자 경유 요청</div>
+          <div class="dc hl" style="flex:1">직접, 중개자 없음</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none;background:#fff">비착용자 사전 조건</div>
+          <div class="dc" style="flex:1;background:#fff">플랫폼 가입 필요</div>
+          <div class="dc hl" style="flex:1">없음</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none;background:#fff">낯선 사람 대응</div>
+          <div class="dc" style="flex:1;background:#fff">착용자가 요청 자체를 회피</div>
+          <div class="dc hl" style="flex:1">동일하게 작동</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none;background:#fff">합성 처리 위치</div>
+          <div class="dc" style="flex:1;background:#fff">외부 클라우드 생성 백엔드</div>
+          <div class="dc hl" style="flex:1">Galaxy 기기 내 On-device</div>
+        </div>
+        <div class="dr">
+          <div class="dc fc" style="width:200px;flex:none;background:#fff">생체정보</div>
+          <div class="dc" style="flex:1;background:#fff">얼굴 임베딩 전송·대조</div>
+          <div class="dc hl" style="flex:1">Phase 1은 미추출, 박스 추적만</div>
+        </div>
+      </div>
     </div>
 
     <div class="row">
-      <div class="card dark">
-        <div class="big">01</div>
-        <div class="ttl">기본 상태를 ‘보호’로 설정하는 접근의 전환</div>
-        <div class="bd">기존 방식은 비착용자가 LED를 확인하고 스스로 대응해야만 보호받는 구조. 본 제안은 기본 상태 자체를 보호 중심으로 설정해 착용자는 자연스럽게 기록하고, 주변 사람은 아무것도 하지 않아도 보호받습니다.</div>
-      </div>
       <div class="card">
         <div class="big">02</div>
+        <div class="ttl">기본 상태를 ‘보호’로 설정하는 접근의 전환</div>
+        <div class="bd">기존 방식은 비착용자가 LED를 확인하고 스스로 대응해야만 보호받는 구조입니다. 본 제안은 기본 상태 자체를 보호 중심으로 설정해 착용자는 자연스럽게 기록하고, 주변 사람은 아무것도 하지 않아도 보호받습니다.</div>
+      </div>
+      <div class="card">
+        <div class="big">03</div>
         <div class="ttl">개인별 선택적 촬영 — ‘사람 단위’의 선택권</div>
-        <div class="bd">화면 속 모두를 한꺼번에 가리거나 드러내지 않고, 각 인물의 허용 의사에 따라 개별 해제. 기존의 일괄적인 촬영 방식에서 벗어나, 개인별 선택이 가능한 촬영 경험을 제안합니다.</div>
+        <div class="bd">화면 속 모두를 한꺼번에 가리거나 드러내지 않고, 각 인물의 허용 의사에 따라 개별 해제합니다. 기존의 일괄적인 촬영 방식에서 벗어나, 개인별 선택이 가능한 촬영 경험을 제안합니다.</div>
         <div class="illus">
           <div class="people">
             <div class="pcol">
-              <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"></rect><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"></rect><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
+              <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"/><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"/><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#9A9A9A"/><rect x="5.2" y="36" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="46" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="56" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="66" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="76" width="41.6" height="3.4" fill="#fff"/></svg>
               <div class="cap">보호</div>
             </div>
             <div class="pcol">
               <div class="pfig">
-                <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><circle cx="26" cy="11" r="11" fill="#000"></circle><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
-                <svg width="25" height="29" viewBox="0 0 34 40" aria-hidden="true"><rect x="5" y="14" width="24" height="24" rx="7" fill="#000"></rect><rect x="7.5" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="13.1" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="18.7" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="24.3" y="2" width="4" height="15" rx="2" fill="#000"></rect><rect x="1" y="18" width="5" height="11" rx="2.5" fill="#000"></rect></svg>
+                <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><circle cx="26" cy="11" r="11" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"/></svg>
+                <svg width="25" height="29" viewBox="0 0 34 40" aria-hidden="true"><rect x="5" y="14" width="24" height="24" rx="7" fill="#000"/><rect x="7.5" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="13.1" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="18.7" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="24.3" y="2" width="4" height="15" rx="2" fill="#000"/><rect x="1" y="18" width="5" height="11" rx="2.5" fill="#000"/></svg>
               </div>
               <div class="cap on">허용</div>
             </div>
             <div class="pcol">
-              <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"></rect><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"></rect><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
+              <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"/><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"/><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#9A9A9A"/><rect x="5.2" y="36" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="46" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="56" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="66" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="76" width="41.6" height="3.4" fill="#fff"/></svg>
               <div class="cap">보호</div>
             </div>
             <div class="pcol">
-              <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"></rect><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"></rect><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"></rect><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"></rect><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"></rect><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#000"></path></svg>
+              <svg width="50" height="81" viewBox="0 0 52 85" aria-hidden="true"><rect x="15" y="0" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="0" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="0" width="7.34" height="7.34" fill="#000"/><rect x="15" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="22.34" y="7.34" width="7.34" height="7.34" fill="#000"/><rect x="29.68" y="7.34" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="15" y="14.68" width="7.34" height="7.34" fill="#000"/><rect x="22.34" y="14.68" width="7.34" height="7.34" fill="#9A9A9A"/><rect x="29.68" y="14.68" width="7.34" height="7.34" fill="#000"/><path d="M5.2 47A20.8 20.8 0 0 1 46.8 47V85H5.2Z" fill="#9A9A9A"/><rect x="5.2" y="36" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="46" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="56" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="66" width="41.6" height="3.4" fill="#fff"/><rect x="5.2" y="76" width="41.6" height="3.4" fill="#fff"/></svg>
               <div class="cap">보호</div>
             </div>
           </div>
@@ -967,14 +1064,14 @@ DeepSORT · ByteTrack</div></div>
 
     <div class="row">
       <div class="card">
-        <div class="big">03</div>
+        <div class="big">04</div>
         <div class="ttl">Galaxy 생태계 연결 구조의 근원적 강점</div>
-        <div class="bd">글래스 단독으로 어려운 실시간 인물 추적·마스킹 연산을 스마트폰이 분담. 자체 스마트폰 생태계가 없는 경쟁사와 근본적으로 차별화되며, 글래스는 가볍고 오래 가면서도 스마트폰급 프라이버시 처리를 수행합니다.</div>
+        <div class="bd">글래스 단독으로 어려운 실시간 인물 추적·마스킹 연산을 스마트폰이 분담합니다. 자체 스마트폰 생태계가 없는 경쟁사와 근본적으로 차별화되며, 선행 연구가 클라우드로 내보내는 연산을 Galaxy는 기기 안에서 끝낼 수 있다는 점이 결정적입니다.</div>
       </div>
       <div class="card">
-        <div class="big">04</div>
+        <div class="big">05</div>
         <div class="ttl">새 인터랙션 없이 익숙한 Galaxy 제스처 재사용</div>
-        <div class="bd">Galaxy 카메라의 손바닥 촬영 제스처를 그대로 활용해 착용자·비착용자 모두 학습 부담이 없습니다. 인물 인식·모바일 연동을 통해 제스처 없이 허용하는 시나리오(Phase 3)로도 확장 검토 가능합니다.</div>
+        <div class="bd">Galaxy 카메라의 손바닥 촬영 제스처를 그대로 활용해 학습 부담이 없습니다. 선행 연구가 기존 방식들의 실패 원인으로 지목한 ‘낯선 협상 방식의 강요’를 피하고, 이미 존재하는 사회적 관행 위에 얹습니다.</div>
       </div>
     </div>
 
@@ -994,7 +1091,7 @@ DeepSORT · ByteTrack</div></div>
           <div class="dc fc" style="width:200px;flex:none">비착용자 보호 방식</div>
           <div class="dc" style="flex:1">촬영 사실 고지</div>
           <div class="dc" style="flex:1">촬영 기능 자체 제거</div>
-          <div class="dc hl" style="flex:1">결과물에서 기본 마스킹</div>
+          <div class="dc hl" style="flex:1">결과물에서 전신 기본 마스킹</div>
         </div>
         <div class="dr">
           <div class="dc fc" style="width:200px;flex:none">보호를 위한 비착용자의 행동</div>
@@ -1037,7 +1134,7 @@ DeepSORT · ByteTrack</div></div>
 
 <section class="sheet" id="pg7">
 <div class="sheetlabel">P7 기대효과·참고문헌</div>
-<div class="page" style="height:1780px">
+<div class="page" style="height:1900px">
 <div class="tbl">
 
   <div class="trow">
@@ -1051,13 +1148,13 @@ DeepSORT · ByteTrack</div></div>
       <div class="row3">
         <div class="card dark">
           <div class="big">01</div>
-          <div class="ttl">프라이버시 선도 브랜드 포지셔닝</div>
-          <div class="bd">AI 글래스 논란이 커지는 시점에 Galaxy가 프라이버시를 지킨다는 인식 강화. 영향평가·즉시 익명화 요구에 선제 부합해 규제 리스크를 낮추고 사회적 수용성을 확보한 채 시장 진입</div>
+          <div class="ttl">프라이버시 선도 브랜드 포지셔닝과 규제 선제 대응</div>
+          <div class="bd">AI 글래스 논란이 커지는 시점에 Galaxy가 프라이버시를 지킨다는 인식 강화. CHI 2026 연구에서 비착용자 참가자 <b>전원</b>이 이런 보호 장치를 제조사 의무로 규제화해야 한다고 답했습니다. 규제가 올 때 준비된 제조사와 아닌 제조사의 차이는 결정적입니다</div>
         </div>
         <div class="card">
           <div class="big">02</div>
           <div class="ttl">양쪽 불편 해소 → 핵심 가치 사용 확대</div>
-          <div class="bd">촬영자는 눈치 보지 않고 기록, 주변인은 기본 보호. 착용 거부감이 줄면 공공장소 착용이 늘고, 실제 구매 동기인 핸즈프리 AI 어시스턴트 사용 빈도·만족도 증가</div>
+          <div class="bd">선행 연구에서 착용자들은 이런 보호 장치가 있으면 “계속 켜 둘 수 있다”, “공공장소에서 녹화를 정당화할 수 있다”고 답했습니다. 착용 거부감이 줄면 공공장소 착용이 늘고, 실제 구매 동기인 핸즈프리 AI 어시스턴트 사용 빈도·만족도가 증가합니다</div>
         </div>
         <div class="card">
           <div class="big">03</div>
@@ -1114,20 +1211,20 @@ DeepSORT · ByteTrack</div></div>
     <div class="lab">참고문헌</div>
     <div class="cont" style="gap:16px">
       <div class="refg">
-        <div class="reft">1. 제안 배경</div>
+        <div class="reft">1. 선행 연구</div>
+        <div class="refl">· Khawaja, Y., Rehman, S., Ponticello, A., Bhardwaj, D. et al. (2026). See Me If You Can: A Multi-Layer Protocol for Bystander Privacy with Consent-Based Restoration. CHI ’26, Article 1331, pp. 1–19. doi.org/10.1145/3772318.3790394</div>
+        <div class="refl">· Wang, X., Peng, K., Yi, X., Li, H. (2026). Mind the Gap: Mapping Wearer–Bystander Privacy Tensions and Context-Adaptive Pathways for Camera Glasses. CHI ’26, Article 1663, pp. 1–28. doi.org/10.1145/3772318.3791848</div>
+        <div class="refl">· Umair, M., Maqbool, M. D., Cheema, F. A., Dev, K., Alizai, M. H., Siddiqi, M. A., Bhatti, N. A. (2026). MIRAGE: Full-Body Bystander Privacy for Smart Glasses with Consent-Based Restoration. arXiv:2609.24537</div>
+        <div class="refl">· Al Aaraj, J., Markopoulou, A. (2025). BLINDSPOT: Enabling Bystander-Controlled Privacy Signaling for Camera-Enabled Devices. arXiv:2512.14746</div>
+      </div>
+      <div class="refg">
+        <div class="reft">2. 제안 배경</div>
         <div class="refl">· 안정민, “[법과 상식 사이] 스마트 글래스와 동의 없는 개인정보”, ZDNet Korea, 2026.06.10.</div>
         <div class="refl">· “[현장] 메타, 스마트 글래스 연내 韓 출시…도촬하면?”, ZDNet Korea, 2026.04.30.</div>
         <div class="refl">· “‘LED 가리면 카메라 무용지물’…AI 글래스 안 쓴 사람도 신경 쓰는 메타”, 세계일보, 2026.07.10.</div>
         <div class="refl">· “[빅테크칼럼] 메타 스마트글래스 감지앱 ‘Zuckoff’ 등장”, 뉴스스페이스.</div>
         <div class="refl">· 개인정보보호위원회, 「생체정보 보호 가이드라인」</div>
         <div class="refl">· Nearby Glasses (my PocketPC GmbH), Google Play — 주변 스마트 안경 BLE 탐지 앱, 누적 10만+ 다운로드. play.google.com/store/apps/details?id=ch.pocketpc.nearbyglasses</div>
-      </div>
-      <div class="refg">
-        <div class="reft">2. 선행 연구</div>
-        <div class="refl">· See Me If You Can — 기본 블러 → 동의 시 선택 복원 3단계 프로토콜. doi.org/10.1145/3772318.3790394</div>
-        <div class="refl">· BLINDSPOT — 비착용자 제스처·LED·UWB 기반 실시간 블러 제어. arxiv.org/html/2512.14746</div>
-        <div class="refl">· Mind the Gap — 비착용자 프라이버시 보호 12가지 기술 접근 비교. doi.org/10.1145/3772318.3791848</div>
-        <div class="refl">· BystandAR — 시선·음성 기반 대상/방관자 감지 연구</div>
       </div>
       <div class="refg">
         <div class="reft">3. 기술 실현 가능성</div>
